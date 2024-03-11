@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+.body {
+    min-width: 320px;
+    overflow-x: hidden;
+    font-size: 14px;
+    font-family: 'Times New Roman', serif;
+}
+
+.lg-elem {
+    display: none;
+}
+
+.sm-elem {
+    display: none;
+}
+    @media (min-width: 768px) {
+        .sm-elem {display: block;}
+    }
+
+@media (min-width: 1120px) {
+    .lg-hidden {
+        display: none;
+    }
+}
+
+@media (min-width: 1120px) {
+    .lg-elem {
+        display: block;
+    }
+}
