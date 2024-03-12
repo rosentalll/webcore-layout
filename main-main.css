@@ -1,11 +1,11 @@
-.main__inner {
+.main__wrapper {
     background-color: #F8F8F8;
 }
     @media (min-width: 1120px) {
         .main {
             position: relative;
         }
-        .main__inner {
+        .main__wrapper {
             position: absolute;
             top: -88px;
             left: 0;
@@ -177,7 +177,7 @@
         }
     }
 
-.read-more__btn {
+.read-more__button {
     position: absolute;
     left: 20px;
     z-index: -1;

@@ -2,7 +2,7 @@
  /* настройки внешнего блока */
 
 
-.header__inner {
+.header__wrapper {
     min-height: 88px;
     padding: 0 16px 0 16px;
 
@@ -14,20 +14,20 @@
 
 }
      @media (min-width: 768px) {
-        .header__inner {
+        .header__wrapper {
             padding: 0px 24px 0 24px;
         }
     }
 
         @media (min-width: 1120px) {
-            .header__inner {
+            .header__wrapper {
                 padding: 0 40px 0 40px;
 
                 justify-content: end;
             }
         } 
 
-.header__inner::after {
+.header__wrapper::after {
     content: " ";
     
     background: #EAEAEA;
@@ -40,7 +40,7 @@
     top: 30px;
 }
     @media (min-width: 768px) {
-        .header__inner::after { display: none;}
+        .header__wrapper::after { display: none;}
     }
 
 

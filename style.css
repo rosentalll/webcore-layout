@@ -15,15 +15,15 @@ html {
     font-style: normal;
 }
 
-.lg-elem {
+.lg-visible {
     display: none;
 }
 
-.sm-elem {
+.sm-visible {
     display: none;
 }
     @media (min-width: 768px) {
-        .sm-elem {display: block;}
+        .sm-visible {display: block;}
     }
 
 @media (min-width: 1120px) {
@@ -33,7 +33,7 @@ html {
 }
 
 @media (min-width: 1120px) {
-    .lg-elem {
+    .lg-visible {
         display: block;
     }
 }
