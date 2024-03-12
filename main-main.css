@@ -1,24 +1,36 @@
 .main__wrapper {
     background-color: #F8F8F8;
 }
-    @media (min-width: 1120px) {
-        .main {
-            position: relative;
-        }
+    @media (min-width: 768px) {
         .main__wrapper {
-            position: absolute;
-            top: -88px;
-            left: 0;
-            right: 0;
+            min-height: 375px;      
         }
     }
+        @media (min-width: 1120px) {
+            .main {
+                position: relative;
+            }
+            .main__wrapper {
+                /* min-height: 485px; */
+                position: absolute;
+                top: -88px;
+                left: 0;
+                right: 0;
+                
+            }
+        }
+            @media (min-width: 1120px) {
+                .main__wrapper {
+                    min-height: 445px;      
+                }
+            }
 /* заголовок */
 
 
 .main__title {
     font-size: 1.8em;
     padding: 24px 16px 16px 16px;
-    margin-top: 0;
+    margin: 0;
     position: relative;
 }
     @media (min-width: 768px) {
@@ -29,6 +41,7 @@
         @media (min-width: 1120px) {
             .main__title {
                 padding: 48px 40px 0 40px;
+                margin-bottom: 16px;
             }
         }
 
