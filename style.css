@@ -9,8 +9,10 @@ html {
 .body {
     min-width: 320px;
     overflow-x: hidden;
-    font-size: 14px;
-    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+    font-family: 'TT Lakes';
+    font-weight: normal;
+    font-style: normal;
 }
 
 .lg-elem {
