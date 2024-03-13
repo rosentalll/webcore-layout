@@ -1,0 +1,211 @@
+/* СТИЛИ HEADER ПОД МОБИЛЬНУЮ ВЕРСТИЮ (320px)*/
+ 
+ 
+ /* header__wrapper */
+
+ .header__wrapper {
+    height: 88px;
+    padding: 0 16px 0 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+
+}
+
+.header__wrapper::after {
+    content: " ";
+    
+    background: #EAEAEA;
+    width: 2px;
+    height: 32px;
+    border-radius: 1px;
+
+    position: absolute;
+    right: 40.5%;
+    top: 30px;
+}
+
+
+/* иконки */
+
+
+.icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    padding: 0;
+}
+
+.menu__icon-burger {
+    background-image: url('../icons/nav.svg');
+}
+
+.tools__icon-сall {
+    background-image: url('../icons/call.svg');
+}
+
+.tools__icon-chat {
+    background-image: url('../icons/chat.svg');
+    margin-left: 16px;
+}
+
+.tools__icon-profile {
+    background-image: url('../icons/profile.svg');
+    margin-left: 16px;
+}
+
+.tools__icon-application {
+    background-image: url('../icons/repair.svg');
+    margin-left: 16px;
+}
+
+.tools__icon-status {
+    background-image: url('../icons/checkstatus.svg');
+    margin-left: 16px;
+}
+
+/* левый блок header  */
+
+.header__menu {
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: block;
+    padding-left: 16px;
+}
+
+
+/* правый блок header  */
+
+
+.tools {
+    display: flex;
+    align-items: center;
+}
+
+
+/* МЕДИАЗАПРОСЫ (720 и 1120 px) */
+
+
+/* header__wrapper */
+
+
+@media (min-width: 768px) {
+
+    .header__wrapper {
+        padding: 0px 24px 0 24px;
+    }
+
+    .header__wrapper::after { 
+        display: none;
+    }
+
+}
+
+@media (min-width: 1120px) {
+
+    .header__wrapper {
+        padding: 0 40px 0 40px;
+        justify-content: end;
+    }
+    
+} 
+
+
+/* иконки */
+
+@media (min-width: 768px) {
+    .tools__icon-application {
+         margin-left: 32px;
+    }
+ }
+
+@media (min-width: 1120px) {
+
+    .tools__icon-status, .tools__icon-application {
+        
+        background-color: #F8F8F8;
+        /* display: flex; */
+        /* justify-content: end;
+        align-items: center; */
+        background-repeat: no-repeat;
+        background-position: right;
+        margin: 0;
+
+        position: relative;
+        top: 20px;
+        z-index: 2;
+        min-width: 200px;
+    }
+
+    .tools__icon-application {
+        min-width: 220px;
+    }
+
+}
+
+
+/* левый блок header */
+
+
+@media (min-width: 768px) {
+
+    .header__menu::before {
+        content: " ";
+
+        background: #EAEAEA;
+        width: 2px;
+        height: 32px;
+        border-radius: 1px;
+
+        position: absolute;
+        left: 32%;
+    }
+
+    .logo {
+        padding-left: 32px;
+    }
+
+}
+
+
+/* правый блок header */
+
+
+@media (min-width: 768px) {
+
+    .header__tools {
+        position: relative;
+    }
+
+    .header__tools::after {
+        content: " ";
+
+        background: #EAEAEA;
+        width: 2px;
+        height: 32px;
+        border-radius: 1px;
+
+        position: absolute;
+        right: 40%;
+    }
+    
+}
+
+@media (min-width: 1120px) {
+    .header__tools::after {
+        display: none;
+    }
+}

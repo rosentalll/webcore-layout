@@ -1,0 +1,275 @@
+/* СТИЛИ MAIN ПОД МОБИЛЬНУЮ ВЕРСТИЮ (320px)*/
+
+
+.main__wrapper {
+    background-color: #F8F8F8;
+}
+
+    
+/* заголовок */
+
+
+.main__title {
+    font-size: 1.8em;
+    padding: 24px 16px 16px 16px;
+    margin: 0;
+    position: relative;
+}
+    
+
+.main__title::before {
+    content: " ";
+    
+    background: #41F6D7;
+    width: 4px;
+    height: 40px;
+    border-radius: 0 3px 3px 0;
+
+    position: absolute;
+    left: 0px;
+    top: 18px;
+}
+        
+
+/* навигация */
+
+
+.nav__list {
+    list-style-type: none;
+    padding: 0 16px 0 16px;
+
+    font-size: 16px;
+
+    overflow-x: auto;
+    display: flex;
+}
+    
+.nav__list::-webkit-scrollbar {
+    width: 0;
+}
+
+.nav__item {
+    
+    padding: 6px 14px 6px 14px;
+    min-width: fit-content;
+    margin-left: 16px;
+}
+
+/* .nav__item:hover {
+    outline: 2px solid #41F6D7;
+    outline-offset: -2px;
+    border-radius: 6px;
+    background-color: #fff;
+} */
+
+.nav__item:first-child {
+    margin-left: 0;
+    border: 2px solid #41F6D7;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.nav__link {
+    color: #7E7E82;
+    text-decoration: none;
+    align-self: center;
+}
+
+/* о нас */
+
+    
+.about-us__text {
+    padding: 0 16px 16px 16px;
+}
+    
+
+.about-us__photo {
+    width: 100%;
+    height: auto;
+}
+
+
+/* показать больше  */
+
+.show-more {
+    display: block;
+    background-color: #F8F8F8;
+    border: none;
+}
+
+.about-us__show-more {
+    margin: 0 0 16px 30px;
+    position: relative;
+}
+
+.about-us__show-more::before {
+    content: "";
+    
+    background-color: transparent;
+    background-image: url('../icons/expand.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    width: 24px;
+    height: 24px;
+
+    position: absolute;
+    left: -16px;
+    top: -3px; 
+    
+}
+
+/* отступы по бокам "о нас" */
+
+.about-us--horizontal-paddings {
+    padding: 0 16px 0 16px;
+}
+
+
+/* МЕДИАЗАПРОСЫ (720 и 1120 px) */
+
+
+/* main, main-wrapper */
+
+
+@media (min-width: 768px) {
+
+    .main__wrapper {
+        min-height: 350px;      
+    }
+
+}
+
+@media (min-width: 1120px) {
+
+    .main__wrapper {
+        min-height: 460px;    
+        
+        position: absolute;
+        top: -88px;
+        left: 0;
+        right: 0;
+    }
+
+    .main {
+        position: relative;
+    }
+
+}        
+
+
+/* заголовок h1 и его псевдоэлемент */
+
+@media (min-width: 768px) {
+
+    .main__title {
+        padding: 24px;
+    }
+
+}
+
+@media (min-width: 1120px) {
+
+    .main__title {
+        padding: 48px 40px 0 40px;
+        margin-bottom: 16px;
+    }
+
+    .main__title::before {
+        top: 44px;
+    }
+
+}
+
+
+/* навигация */
+
+
+@media (min-width: 768px) {
+
+    .nav__list {
+        padding: 0 24px 0 24px;
+    }
+
+}
+
+@media (min-width: 1120px) {
+
+    .nav__list {
+        padding: 0 40px 0 40px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .nav__item {
+        margin: 0 0 10px 0;
+    }
+
+}
+
+
+/* о нас */
+
+
+@media (min-width: 768px) {
+
+    .main__about-us {
+        position: relative;
+        padding-bottom: 0;
+    }
+
+    .about-us__text {
+        width: 55%;
+        padding: 0 24px 0 24px;
+    
+    }
+
+    .about-us__photo {
+        width: 310px;
+        height: 170px;
+        border-radius: 0.5em;
+        
+        position: absolute;
+        top: 0px;
+        right: 3.5%;
+    }
+
+}
+
+@media (min-width: 1120px) {
+
+    .main__about-us {
+        position: relative;
+        padding-bottom: 80px;
+    }
+
+    .about-us__text {
+        padding: 0 40px 0 40px
+    }
+
+    .about-us__photo {
+        width: 470px;
+        height: 240px;
+        
+        position: absolute;
+        top: 0px;
+        right: 3.5%;
+    }
+
+}
+
+
+/* показать больше */
+
+
+@media (min-width: 768px) {
+    .about-us__show-more {
+        margin: 0 0 0 38px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .about-us__show-more {
+        margin: 0 0 0 54px;
+    }
+}

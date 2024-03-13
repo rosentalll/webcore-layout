@@ -1,0 +1,40 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 320px;
+    max-width: 1120px;
+    overflow-x: auto;
+    font-size: 14px;
+    font-family: 'TT Lakes';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.lg-visible {
+    display: none;
+}
+
+.sm-visible {
+    display: none;
+}
+    @media (min-width: 768px) {
+        .sm-visible {display: block;}
+    }
+
+@media (min-width: 1120px) {
+    .lg-hidden {
+        display: none;
+    }
+}
+
+@media (min-width: 1120px) {
+    .lg-visible {
+        display: block;
+    }
+}
