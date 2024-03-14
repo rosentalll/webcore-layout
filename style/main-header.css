@@ -28,48 +28,7 @@
     top: 30px;
 }
 
-
-/* иконки */
-
-
-.icon {
-    display: block;
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    border: none;
-    padding: 0;
-}
-
-.menu__icon-burger {
-    background-image: url('../icons/nav.svg');
-}
-
-.tools__icon-сall {
-    background-image: url('../icons/call.svg');
-}
-
-.tools__icon-chat {
-    background-image: url('../icons/chat.svg');
-    margin-left: 16px;
-}
-
-.tools__icon-profile {
-    background-image: url('../icons/profile.svg');
-    margin-left: 16px;
-}
-
-.tools__icon-application {
-    background-image: url('../icons/repair.svg');
-    margin-left: 16px;
-}
-
-.tools__icon-status {
-    background-image: url('../icons/checkstatus.svg');
-    margin-left: 16px;
-}
-
-/* левый блок header  */
+/* левый блок header */
 
 .header__menu {
     position: relative;
@@ -83,7 +42,7 @@
 
 .logo {
     display: block;
-    padding-left: 16px;
+    padding: 0 0 0 16px;
 }
 
 
@@ -127,19 +86,16 @@
 /* иконки */
 
 @media (min-width: 768px) {
-    .tools__icon-application {
+    .icon--application {
          margin-left: 32px;
     }
  }
 
 @media (min-width: 1120px) {
 
-    .tools__icon-status, .tools__icon-application {
+    .icon--status, .icon--application {
         
         background-color: #F8F8F8;
-        /* display: flex; */
-        /* justify-content: end;
-        align-items: center; */
         background-repeat: no-repeat;
         background-position: right;
         margin: 0;
@@ -150,7 +106,7 @@
         min-width: 200px;
     }
 
-    .tools__icon-application {
+    .icon--application {
         min-width: 220px;
     }
 

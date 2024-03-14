@@ -5,39 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/stylesheet.css">
+    <link rel="stylesheet" href="./style/icons.css">
     <link rel="stylesheet" href="./style/main-header.css">
     <link rel="stylesheet" href="./style/main-main.css">
     <link rel="stylesheet" href="./style/style.css">
-    
     <title>Main Copy</title>
 </head>
 <body>
     <header class="header">
+
         <div class="header__wrapper">
+
             <div class="header__menu menu lg-hidden">
-                <button class="menu__icon-burger icon"></button>
-                <div class="menu__logo logo">
+                <button class="icon icon--burger"></button>
+                <div class="header__logo logo">
                     <a href="#">
                         <img src="icons/main-logo.svg" alt="Логотип компании CPS">
                     </a>
                 </div>
             </div>
+
             <div class="header__tools tools">
-                <button class="tools__icon-сall icon sm-visible lg-hidden"></button>
-                <button class="tools__icon-chat icon sm-visible lg-hidden"></button>
-                <button class="tools__icon-profile icon sm-visible lg-hidden"></button>
-                <button class="tools__icon-application icon">
+                <button class="icon icon--сall sm-visible lg-hidden"></button>
+                <button class="icon icon--chat sm-visible lg-hidden"></button>
+                <button class="icon icon--profile sm-visible lg-hidden"></button>
+                <button class="icon icon--application">
                     <span class="lg-visible">Оставить заявку</span>
                 </button>
-                <button class="tools__icon-status icon">
+                <button class="icon icon--status">
                     <span class="lg-visible">Узнать статус</span>
                 </button>
             </div>
+
         </div>
+
     </header>
+
     <main class="main">
+
         <div class="main__wrapper">
+
             <h1 class="main__title">Услуги и сервисы</h1>
+
             <nav class="main__nav nav">
                 <ul class="nav__list">
                     <li class="nav__item">
@@ -72,13 +81,16 @@
                     </li>
                 </ul>
             </nav>
+
             <section class="main__about-us about-us">
                 <p class="about-us__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
                 <p class="about-us__text sm-visible">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="lg-visible">,что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
                 <button class="about-us__show-more show-more">Читать далее</button>
                 <img class="about-us__photo" src="img/Picture Copy.png" alt="О нас">
             </section>
+
         </div>
+        
     </main>
 </body>
 </html>

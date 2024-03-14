@@ -1,0 +1,44 @@
+.icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    padding: 0;
+}
+
+.icon--burger {
+    background-image: url('../icons/nav.svg');
+}
+
+.icon--сall {
+    background-image: url('../icons/call.svg');
+}
+
+.icon--chat {
+    background-image: url('../icons/chat.svg');
+    margin-left: 16px;
+}
+
+.icon--profile {
+    background-image: url('../icons/profile.svg');
+    margin-left: 16px;
+}
+
+.icon--application {
+    background-image: url('../icons/repair.svg');
+    margin-left: 16px;
+}
+
+.icon--status {
+    background-image: url('../icons/checkstatus.svg');
+    margin-left: 16px;
+}
+
+.icon--close {
+    background-image: url('../icons/close.svg');
+}
+
+.icon--search {
+    background-image: url('../icons/search.svg');
+}
